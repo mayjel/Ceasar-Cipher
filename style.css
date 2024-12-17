@@ -1,0 +1,252 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merienda', sans-serif;
+    background: linear-gradient(45deg, #33df11, #b7f707, #f0cd08);
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cover-page {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 30px auto;
+    width: 60%;
+    max-width: 500px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    font-size: 1em;
+}
+
+/* New Section for Clue Name and Clue Text */
+#clue-name {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #ff5277; /* Highlight clue name */
+    font-size: 1.3em; 
+    margin-bottom: 8px; 
+    text-transform: uppercase; 
+}
+
+#clue {
+    color: #333; 
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* Styling for the Clue Text Box */
+#clue-box p {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #ff5277;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#clue {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #e912cc;
+}
+
+/* Game Page Styling */
+#game-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 50px auto;
+}
+
+/* Centering and styling the content inside the game */
+h2, h3 {
+    font-size: 1.5em;
+    color: #ff5277;
+    margin-bottom: 10px;
+}
+
+#level-info, #cipher-text {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #ff5277;
+    font-family: 'Pacifico', cursive;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff9f00;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff5277;
+    font-weight: bold;
+}
+
+/* Mission Page */
+#mission-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 50px auto;
+}
+
+#mission-page h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: linear-gradient(135deg, #ff7eb9, #ff9f00);
+}
+
+#mission-page p {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+/* Congratulations Page */
+#congratulations-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    background: #ffffff;
+}
+
+#congratulations-page h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #ff5277;
+}
+
+#congratulations-page p {
+    font-family: 'Merienda', sans-serif;
+    font-size: 1.5em;
+    color: #ff5277;
+    line-height: 1.5;
+}
+
+#diamond {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+#diamond img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#diamond button {
+    background-color: #ff9f00;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#diamond button:hover {
+    background-color: #ff6f00;
+}
+
+/* Cover Page Styling */
+.cover-page h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    color: transparent;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: none;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff7eb9, #ff9f00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.game-description {
+    padding: 20px;
+}
+
+.game-description p, .game-description ol {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.0em;
+    color: #000000;
+    line-height: 1.5;
+}
+
+ol {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #ff12ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+button:hover {
+    background-color: #ff6f00;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Treasure Hunt Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div class="cover-page">
+        <h1>Welcome to the Cipher Treasure Hunt!</h1>
+        <div class="game-description">
+            <p>In this game, you will need to decode a series of ciphers using the Caesar cipher to find the hidden treasure. Each level becomes more difficult, and you must complete one level before advancing to the next.</p>
+            <h2>How to Play:</h2>
+            <ol>
+                <li>You will be given a ciphered word.</li>
+                <li>The shift value to decode the cipher will be provided.</li>
+                <li>Type in your decoded word and click "Submit".</li>
+                <li>Correct answers move you to the next puzzle. If incorrect, try again!</li>
+            </ol>
+            <p><strong>Good luck!</strong></p>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Mission Page -->
+    <div id="mission-page" style="display: none;">
+        <h2>Mission: Solve the Cipher!</h2>
+        <p>Answer the puzzles correctly to unlock the diamond treasure!</p>
+    </div>
+
+    
+    <div id="game-page" style="display: none;">
+        <h2 id="level-info"></h2>
+        <p id="cipher-text" style="font-size: 1.5em; font-weight: bold;"></p>
+        <p id="shift-value" style="font-size: 1.2em;"></p>
+        <p id="word-length" style="font-size: 1.2em;"></p>
+
+        <div id="clue-box">
+            <p style="font-size: 1.0em; font-weight: bold;">
+                Clue: <span id="clue" style="font-weight: normal;"></span>
+            </p>
+        </div>
+
+        
+        <input type="text" id="user-input" placeholder="Enter your decoded word" style="font-size: 1em; padding: 5px;"/>
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="result" style="font-weight: bold;"></p>
+    </div>
+
+    
+    <div id="congratulations-page" style="display: none;">
+        <h2>Level Complete!</h2>
+        <p>Great job! You're one step closer to finding the diamond treasure.</p>
+        <button onclick="proceedToNextLevel()">Next Level</button>
+    </div>
+
+    <!-- Diamond Treasure Page -->
+    <div id="diamond" style="display: none;">
+        <h2>Congratulations! You've Found the Diamond!</h2>
+        <p>You've completed all the puzzles and unlocked the treasure!</p>
+        <img src="https://blog.sothebysrealty.ae/hs-fs/hubfs/The%20Most%20Expensive%20Diamonds%20in%20the%20World-jpg-3.jpeg?width=1600&height=883&name=The%20Most%20Expensive%20Diamonds%20in%20the%20World-jpg-3.jpeg" alt="Diamond Treasure" style="width:100%; max-width:600px;">
+        <button onclick="restartGame()">Start Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
